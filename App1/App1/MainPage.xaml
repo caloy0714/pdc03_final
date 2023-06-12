@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage"
+             >
+
+    <StackLayout VerticalOptions="Center"
+                 Padding="20"
+                 Spacing="20">
+
+        <StackLayout VerticalOptions="Center"
+             HorizontalOptions="Center"
+             Margin="0,-20,0,0">
+            <Image Source="https://static.vecteezy.com/system/resources/previews/013/733/833/non_2x/animal-paw-and-human-hand-silhouette-icon-animal-donation-care-and-protection-concept-adoption-of-pets-shelter-charity-icon-animal-welfare-pictogram-illustration-vector.jpg"
+                   HorizontalOptions="Center"
+                   HeightRequest="200"
+                   Aspect="AspectFit" />
+
+            <Label Text="Animal Welfare"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="Black" />
+
+            <Label Text="Protecting and Caring for Animals"
+                   HorizontalTextAlignment="Center"
+                   FontSize="16"
+                   TextColor="Gray" />
+        </StackLayout>
+
+
+        <Button Text="View Endangered Animals"
+                Clicked="EndangeredAnimalsClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="#E74C3C"
+                TextColor="White"
+                FontSize="20"
+                CornerRadius="10"
+                WidthRequest="300"
+                HeightRequest="50" />
+
+        <Button Text="Save an Animal"
+                Clicked="AddAnimalClicked"
+                HorizontalOptions="Center"
+                BackgroundColor="#27AE60"
+                TextColor="White"
+                FontSize="20"
+                CornerRadius="10"
+                WidthRequest="250"
+                HeightRequest="50" />
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.View.AddEmployee"
+             BackgroundColor="#A7E49C">
+    <ContentPage.Content>
+        <StackLayout Margin="10" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+            <Entry x:Name="txtAnimal" Placeholder="Animal Code" />
+            <Entry x:Name="txtChar" Placeholder="Characteristics" />
+            <Entry x:Name="txtSpecies" Placeholder="Species" />
+            <Entry x:Name="txtHabitat" Placeholder="Habitat" />
+            <Entry x:Name="txtThreat" Placeholder="Threat" />
+            <Button x:Name="btnSaveUpdate" Text="Save" Clicked="btnSaveUpdate_Clicked" BackgroundColor="Blue" TextColor="White" CornerRadius="10" HeightRequest="50" Margin="0,20" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
