@@ -13,43 +13,43 @@ namespace App1.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ShowEmployeePage : ContentPage
     {
-        EmployeeViewModel viewModel;
-        public ShowEmployeePage()
+        AnimalViewModel viewModel;
+        public ShowAnimalPage()
         {
             InitializeComponent();
-            viewModel = new EmployeeViewModel();
+            viewModel = new AnimalViewModel();
         }
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            showEmployee();
+            showAnimals();
         }
         private void showEmployee()
         {
-            var res = viewModel.GetAllEmployees().Result;
+            var res = viewModel.GetAllAnimals().Result;
             lstData.ItemsSource = res;
         }
 
         private void btnAddRecord_Clicked(object sender, EventArgs e)
         {
-            this.Navigation.PushAsync(new AddEmployee());
+            this.Navigation.PushAsync(new AddAnimal());
         }
 
         private async void lstData_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             if (e.SelectedItem != null)
             {
-                EmployeeModel obj = (EmployeeModel)e.SelectedItem;
+                EmployeeModel obj = (AnimalModel)e.SelectedItem;
                 string res = await DisplayActionSheet("Operation", "Cancel", null, "Update", "Delete");
 
                 switch (res)
                 {
                     case "Update":
-                        await this.Navigation.PushAsync(new AddEmployee(obj));
+                        await this.Navigation.PushAsync(new AddAnimal(obj));
 
                         break;
                     case "Delete":
-                        viewModel.DeleteEmployee(obj);
+                        viewModel.DeleteAnimal(obj);
                         showEmployee();
                         break;
                 }
