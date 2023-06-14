@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.EndangeredAnimals"
+             BackgroundColor="#A7E49C">
+    
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="10" Padding="10">
+                <Label Text="Currently Endangered Animals" FontAttributes="Bold" FontSize="24" HorizontalOptions="Center" TextColor="Red" />
+                <BoxView HeightRequest="30" />
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Bald_Eagle_By_Carole_Robertson.jpg/520px-The_Bald_Eagle_By_Carole_Robertson.jpg"
+                       Aspect="AspectFit"
+                       />
+                </StackLayout>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Animal Code:" FontAttributes="Bold"/>
+                            <Span Text=" Eagle"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Characteristics:" FontAttributes="Bold" />
+                            <Span Text=" Tenacious"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Species:" FontAttributes="Bold" />
+                            <Span Text=" Bird" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Habitat:" FontAttributes="Bold" />
+                            <Span Text=" Forest" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Threat:" FontAttributes="Bold" />
+                            <Span Text=" Deforestation" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Importance:" FontAttributes="Bold" />
+                            <Span Text=" Bald eagles are a very important part of the environment. By eating dead animal matter, they help with nature's clean-up process. Bald eagles are also hunters, so they keep animal populations strong. They do this by killing weak, old, and slower animals, leaving only the healthiest to survive." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView HeightRequest="1" Color="Black" />
+
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="https://static.wikia.nocookie.net/naturerules1/images/4/42/Chelonia_mydas.jpeg/revision/latest?cb=20230310143230"
+                       Aspect="AspectFit"
+                       HeightRequest="200"/>
+                </StackLayout>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Animal Code:" FontAttributes="Bold" />
+                            <Span Text=" Turtle" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Characteristics:" FontAttributes="Bold" />
+                            <Span Text=" Slow" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Species:" FontAttributes="Bold" />
+                            <Span Text=" Reptiles" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Habitat:" />
+                            <Span Text=" Lagoons" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Threat:" />
+                            <Span Text=" Water Pollution" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Importance:" FontAttributes="Bold" />
+                            <Span Text=" Sea turtles have played vital roles in maintaining the health of the world's oceans for more than 100 million years. These roles range from maintaining productive coral reef ecosystems to transporting essential nutrients from the oceans to beaches and coastal dunes." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView HeightRequest="1" Color="Black" />
+
+                <StackLayout HorizontalOptions="Center">
+                    <Image Source="https://i.pinimg.com/originals/5e/7b/02/5e7b02434824437a1b14bb11ca0ca207.png"
+                       Aspect="AspectFit"
+                       HeightRequest="200"/>
+                </StackLayout>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Animal Code:" FontAttributes="Bold" />
+                            <Span Text=" Meerkat" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Characteristics:" FontAttributes="Bold" />
+                            <Span Text=" Small" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Species:" FontAttributes="Bold" />
+                            <Span Text=" Mongoose" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Habitat:" FontAttributes="Bold" />
+                            <Span Text=" Grasslands" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Threat:" FontAttributes="Bold" />
+                            <Span Text=" Predators" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Label TextColor="Black" FontSize="16">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Importance:" FontAttributes="Bold" />
+                            <Span Text=" Meerkats play an important part in maintaining ecological harmony in the arid regions of southern Africa. They are a food source for predators such as jackals and eagles, and they curb pest infestation by eating insects. Because meerkats don't store fat, they eat a large number of insects every day." />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <BoxView HeightRequest="100" />
+          
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+
+</ContentPage>
