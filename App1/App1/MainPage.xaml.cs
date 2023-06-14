@@ -24,7 +24,7 @@ namespace App1
 
         private async void AddAnimalClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ShowEmployeePage());
+            await Navigation.PushAsync(new ShowAnimalPage());
         }
 
     }
