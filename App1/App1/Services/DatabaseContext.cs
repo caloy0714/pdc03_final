@@ -10,7 +10,7 @@ namespace App1.Services
 {
     public class DatabaseContext : DbContext
     {
-        public DbSet<EmployeeModel> Employees { get; set; }
+        public DbSet<AnimalModel> Animals { get; set; }
         public DatabaseContext()
         {
             this.Database.EnsureCreated();
@@ -18,7 +18,7 @@ namespace App1.Services
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Employee.db");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Animal.db");
             optionsBuilder.UseSqlite($"Filename={dbPath}");
         }
 
