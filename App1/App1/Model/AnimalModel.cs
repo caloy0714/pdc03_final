@@ -5,7 +5,7 @@ using System.Text;
 
 namespace App1.Model
 {
-    public class EmployeeModel
+    public class AnimalModel
     {
         [Key]
 
