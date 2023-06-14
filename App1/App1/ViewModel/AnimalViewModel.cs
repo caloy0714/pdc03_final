@@ -8,21 +8,21 @@ using System.IO;
 
 namespace App1.ViewModel
 {
-    public class EmployeeViewModel
+    public class AnimalViewModel
     {
         private Services.DatabaseContext getContext()
         {
             return new Services.DatabaseContext();
         }
 
-        public async Task<List<EmployeeModel>> GetAllEmployees()
+        public async Task<List<AnimalModel>> GetAllAnimals()
         {
             var _dbContext = getContext();
             var res = await _dbContext.Employees.ToListAsync();
             return res;
 
         }
-        public async Task<int> UpdateEmployee(EmployeeModel obj)
+        public async Task<int> UpdateAnimal(AnimalModel obj)
         {
             var _dbContext = getContext();
             _dbContext.Employees.Update(obj);
@@ -30,7 +30,7 @@ namespace App1.ViewModel
             return c;
         }
 
-        public int InsertEmployee(EmployeeModel obj)
+        public int InsertAnimal(AnimalModel obj)
         {
             var _dbContext = getContext();
             _dbContext.Employees.Add(obj);
@@ -38,7 +38,7 @@ namespace App1.ViewModel
             return c;
         }
 
-        public int DeleteEmployee(EmployeeModel obj)
+        public int DeleteAnimal(AnimalModel obj)
         {
             var _dbContext = getContext();
             _dbContext.Employees.Remove(obj);
